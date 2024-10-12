@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing page aki</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  <!-- animasi AOS  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.4/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Menggunakan Google Font 'Roboto' yang terlihat profesional */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 700; /* Membuat heading lebih tebal dan menonjol */
+      }
+
+      p,
+      a,
+      li,
+      span,
+      div {
+        font-weight: 400; /* Bobot normal untuk teks biasa */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- balon wa start -->
+    <div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000">
+      <a href="https://wa.me/6285866885849" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="Chat WhatsApp"
+          style="
+            width: 60px;
+            height: 60px;
+            filter: drop-shadow(2px 4px 6px black);
+          "
+        />
+      </a>
+    </div>
+    <!-- balon wa end -->
+    <!-- navbar start -->
+    <nav
+      class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 fixed top-0 left-0 w-full z-50"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span
+            class="self-center text-2xl font-bold whitespace-nowrap dark:text-white"
+            >Kembar Aki</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-solid-bg"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-solid-bg"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+          <ul
+            class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#home"
+                class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#product"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Product</a
+              >
+            </li>
+            <li>
+              <a
+                href="#gallery"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <button id="darkModeToggle" class="p-2 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200">
+      Dark Mode
+    </button>
+    <!-- navbar end -->
+    <!-- Hero start-->
+    <div
+      class="from-violet-600/10 via-transparent bg-[url('/img/bg-hero.jpg')] bg-center bg-cover h-[100vh] bg-black/50 filter"
+      id="home"
+    >
+      <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
+        <!-- Title -->
+        <div class="max-w-3xl text-center mx-auto mt-10">
+          <h1
+            class="block font-semibold text-gray-200 text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
+            id="teks-berjalan"
+          >
+            Toko Aki Terpercaya Salatiga
+          </h1>
+        </div>
+        <!-- End Title -->
+
+        <div class="max-w-3xl text-center mx-auto">
+          <p class="text-lg text-white" id="teks">Kualitas Oke, Harga Kompetitif</p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="text-center">
+          <a
+            class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl bg-transparent border border-white hover:bg-blue-600 text-white text-sm font-medium rounded-full focus:outline-none focus:ring-1 focus:ring-slate-600 py-3 px-6 dark:focus:ring-offset-slate-800"
+            href="#contact"
+          >
+            konsultasi sekarang
+            <svg
+              class="flex-shrink-0 size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m9 18 6-6-6-6" />
+            </svg>
+          </a>
+        </div>
+        <!-- End Buttons -->
+      </div>
+    </div>
+    <!-- End Hero -->
+
+    <!-- about section start -->
+    <section id="about" class="bg-white text-black py-20 dark:bg-slate-800 " id="about" >
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="text-4xl font-bold text-sky-600 ">Tentang kami</h2>
+          <p class="text-slate-600 mt-4 font-semibold text-lg dark:text-white">
+            Setelah menyelesaikan pendidikan saya pada tahun 2019, saya
+            mengambil keputusan strategis untuk melanjutkan dan mengembangkan
+            usaha keluarga di sektor baterai otomotif/AKI. Langkah ini tidak
+            hanya memperkuat warisan bisnis kami, tetapi juga memberi saya
+            kesempatan untuk mengejar dan memperluas keahlian saya dalam
+            industri baterai/AKI, yang merupakan area minat dan keahlian saya.
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center text-center">
+          <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">
+            <div
+              class="p-6 border border-gray-700 rounded-lg hover:bg-blue-600 hover:text-white flex items-center card-1 hover:scale-110 transition duration-300 flex items-center dark:border-white"
+              
+            >
+              <svg
+                class="h-9 w-9 mr-2 dark:text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                ></path>
+              </svg>
+              <div>
+                <h3 class="text-xl font-semibold dark:text-white">Misi Kami</h3>
+                <p class="mt-1 text-slate-600 hover:text-white dark:text-white">
+                  Memajukan potensi diri dalam sektor otomotif, khususnya perAKI an
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8"  data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
+            <div
+              class="p-6 border border-gray-700 rounded-lg hover:bg-blue-600 hover:text-white transform hover:scale-110 transition duration-300 flex items-center dark:border-white"
+            
+            >
+              <svg
+                class="h-9 w-9 mr-2 dark:text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zm0 10c-4.418 0-8-1.791-8-4m16 0c0 2.209-3.582 4-8 4m8-4V5l-8 5-8-5v9c0 2.209 3.582 4 8 4s8-1.791 8-4z"
+                ></path>
+              </svg>
+              <div>
+                <h3 class="text-xl font-semibold dark:text-white">Visi Kami</h3>
+                <p class="mt-2 text-slate-600 hover:text-white dark:text-white">
+                  Menjadi pemimpin dalam inovasi dan kreativitas di
+                  industri
+                </p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- product section start -->
+    <!-- Card Blog -->
+    <div
+      class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-gradient-to-r from-blue-500 to-blue-800 p-10"
+      id="product"
+      data-aos="fade-up" data-aos-duration="1000"
+    >
+      <div class="text-white text-center p-10" data-aos="fade-up" data-aos-delay="200">
+        <h1 class="font-bold text-4xl">Produk Kami</h1>
+        <p class="text-xl mt-2 dark:text-white">
+          Temukan inovasi terbaru yang sesuai dengan kebutuhan Anda
+        </p>
+      </div>
+      <!-- Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="300">
+        <!-- Card -->
+        <div
+          class="group flex flex-col h-full bg-white border border-gray-200 shadow-lg rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 transform hover:scale-105 transition duration-500"
+        >
+          <div
+            class="h-52 flex flex-col justify-center items-center bg-[url('../img/gallery-5.jpg')] rounded-t-xl bg-cover"
+          ></div>
+          <div class="p-4 md:p-6">
+            <h3
+              class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white"
+            >
+              Aki motor
+            </h3>
+            <p class="mt-3 text-gray-500 dark:text-neutral-500 dark:text-white">
+                kami menyediakan aki motor dari harga Rp.130.000,00 - Rp.500.000,00
+            </p>
+          </div>
+          <div
+            class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700"
+          >
+            <a
+              class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
+              href="#contact"
+            >
+              Pesan sekarang
+            </a>
+          </div>
+        </div>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <div
+          class="group flex flex-col h-full bg-white border border-gray-200 shadow-lg rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 transform hover:scale-105 transition duration-500"
+        >
+          <div
+            class="h-52 flex flex-col justify-center items-center bg-[url('../img/gallery-4.jpg')] rounded-t-xl bg-cover"
+          ></div>
+          <div class="p-4 md:p-6">
+            <h3
+              class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white"
+            >
+              Aki mobil
+            </h3>
+            <p class="mt-3 text-gray-500 dark:text-neutral-500 dark:text-white">
+              kami menyediakan aki mobil dari harga Rp.650.000,00 - Rp.2.000,000,00
+            </p>
+          </div>
+          <div
+            class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700"
+          >
+            <a
+              class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
+              href="#contact"
+            >
+              Pesan sekarang
+            </a>
+          </div>
+        </div>
+        <!-- End Card -->
+
+        <!-- Card -->
+        <div
+          class="group flex flex-col h-full bg-white border border-gray-200 shadow-lg rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70 transform hover:scale-105 transition duration-500"
+        >
+          <div
+            class="h-52 flex flex-col justify-center items-center bg-[url('../img/gallery-2.jpg')] rounded-t-xl bg-cover"
+          ></div>
+          <div class="p-4 md:p-6">
+            <h3
+              class="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white"
+            >
+              Tukar tambah aki
+            </h3>
+            <p class="mt-3 text-gray-500 dark:text-neutral-500 dark:text-white">
+             kami juga melayani tukar tambah aki dengan segala kondisi dengan harga yang relevan
+            </p>
+          </div>
+          <div
+            class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700"
+          >
+            <a
+              class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
+              href="#contact"
+            >
+              Pesan sekarang
+            </a>
+          </div>
+        </div>
+        <!-- End Card -->
+      </div>
+      <!-- End Grid -->
+    </div>
+    <!-- End Card Blog -->
+    <!-- product section end -->
+
+  
+
+    <!-- gallery section start -->
+    <!-- Masonry Cards -->
+    <div
+      class="max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
+      id="gallery"
+    >
+      <div class="text-center p-10" data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom">
+        <h1 class="text-4xl font-bold text-sky-600">Galeri Kami</h1>
+      </div>
+      <!-- Grid -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6"
+      >
+        <!-- Card 1 -->
+        <div class="group relative block rounded-xl overflow-hidden bg-cover border border-slate-600" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="50">
+          <a href="#contact">
+            <img
+              class="transition-transform duration-500 ease-in-out transform group-hover:scale-110 w-full h-full object-cover rounded-xl"
+              src="/img/gambar-6.jpg"
+              alt="Deskripsi Gambar Baru"
+            />
+          </a>
+        </div>
+        <!-- card 2 -->
+        <div class="group relative block rounded-xl overflow-hidden bg-cover border border-slate-600"  data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100">
+          <a href="#contact">
+            <img
+              class="transition-transform duration-500 ease-in-out transform group-hover:scale-110 w-full h-full object-cover rounded-xl "
+              src="/img/gambar-7.jpg"
+              alt="Deskripsi Gambar"
+            />
+          </a>
+        </div>
+        <!-- Card 3 -->
+        <div class="group relative block rounded-xl overflow-hidden" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="150">
+          <a href="#contact">
+            <img
+              class="transition-transform duration-500 ease-in-out transform group-hover:scale-110 w-full h-full object-cover rounded-xl"
+              src="/img/gallery-2.jpg"
+              alt="Deskripsi Gambar"
+            />
+          </a>
+        </div>
+        <!-- Card 4 -->
+        <div class="group relative block rounded-xl overflow-hidden" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">
+          <a href="#contact">
+            <img
+              class="transition-transform duration-500 ease-in-out transform group-hover:scale-110 w-full h-full object-cover rounded-xl"
+              src="/img/gallery-3.jpg"
+              alt="Deskripsi Gambar"
+            />
+          </a>
+        </div>
+        <!-- Card 5 -->
+        <div class="group relative block rounded-xl overflow-hidden" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="250">
+          <a href="#contact">
+            <img
+              class="transition-transform duration-500 ease-in-out transform group-hover:scale-110 w-full h-full object-cover rounded-xl"
+              src="/img/gallery-4.jpg"
+              alt="Deskripsi Gambar"
+            />
+          </a>
+        </div>
+        <!-- Card 6 -->
+        <div class="group relative block rounded-xl overflow-hidden" data-aos="zoom-in-up"data-aos-duration="1000" data-aos-delay="300">
+          <a href="#contact">
+            <img
+              class="transition-transform duration-500 ease-in-out transform group-hover:scale-110 w-full h-full object-cover rounded-xl"
+              src="/img/gallery-5.jpg"
+              alt="Deskripsi Gambar"
+            />
+          </a>
+        </div>
+        
+      </div>
+      <!-- End Grid -->
+    </div>
+    <!-- gallery section end -->
+    <!-- contact section start -->
+    <section id="contact" class="bg-gray-100 text-gray-900 py-20 dark:bg-slate-800 dark:text-sky-600">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="2000">
+          <h2 class="text-4xl font-bold">Kontak Kami</h2>
+          <p class="text-gray-500 mt-4 dark:text-white">
+            Jika Anda memiliki pertanyaan, jangan ragu untuk menghubungi kami
+            melalui informasi kontak di bawah ini.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-right" data-aos-duration="2000">
+          <div>
+            <!-- Maps Embed -->
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe
+                width="600"
+                height="450"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=600&amp;height=450&amp;hl=en&amp;q=Jl.%20Senjoyo%20IV,%20Bener,%20Kec.%20Tengaran,%20Kabupaten%20Semarang,%20Jawa%20Tengah%2050775+(AKI)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ><a href="https://www.gps.ie/">gps tracker sport</a></iframe
+              >
+            </div>
+          </div>
+          <div>
+            <!-- Contact Details -->
+            <div class="bg-white p-8 shadow-lg rounded-lg dark:bg-slate-700 dark:text-white" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="100">
+              <h3 class="text-2xl font-bold mb-6 text-center">
+                Informasi Kontak
+              </h3>
+              <div class="space-y-4">
+                <div>
+                  <h4 class="text-lg font-semibold">Alamat:</h4>
+                  <p>Jl. Senjoyo IV, Bener, Kec. Tengaran, Kabupaten Semarang, Jawa Tengah 50775</p>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold">Telepon:</h4>
+                  <p>+6285866885849</p>
+                </div>
+                <div>
+                  <h4 class="text-lg font-semibold">Jam Operasional:</h4>
+                  <p>Senin - Minggu, 08:00 - 21:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section end -->
+    
+
+    <!-- footer start -->
+
+    <footer class="footer footer-center p-10 bg-base-200 text-base-content rounded" data-aos="fade-up" data-aos-duration="2000">
+      <nav class="grid grid-flow-col gap-4">
+        <a class="link link-hover" href="#about">About us</a>
+        <a class="link link-hover" href="#product">Product</a>
+        <a class="link link-hover" href="#gallery">Gallery</a>
+        <a class="link link-hover" href="#contact">Contact</a>
+      </nav> 
+      <nav>
+        <div class="grid grid-flow-col gap-6 dark:text-white ">
+          <a  href="https://wa.me/6285866885849" class="w-7 h-7">
+          <i class="fa-brands fa-whatsapp fa-lg"></i>
+          </a> 
+          <a  href="https://wa.me/6285866885849">
+          <i class="fa-brands fa-facebook fa-lg"></i>
+          </a> 
+        </div>
+      </nav> 
+      <aside>
+        <p>Copyright © 2024 - All right reserved by Kembar Aki</p>
+      </aside>
+    </footer>
+    <!-- footer end -->
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <!-- script ini digunakan untuk memuat library Flowbite -->
+    <script src="../src/script.js"></script>
+    <script src="../node_modules/preline/dist/preline.js"></script>
+     <!-- script ini digunakan untuk memuat library preline -->
+    <script src="/path/to/typeit/source"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- script diatas digunakan untuk memuat library AOS -->
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+   
+
+    <!-- script diatas digunakan untuk menginisialisasi library AOS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a55c3ef2ee.js" crossorigin="anonymous"></script>
+  </body>
+</html>
